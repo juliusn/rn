@@ -1,11 +1,11 @@
 steps:
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/cloud-builders/npm:node-12.16.2'
   args: ['install']
 
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/cloud-builders/npm:node-12.16.2'
   args: ['run', 'test']
 
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/cloud-builders/npm:node-12.16.2'
   args: ['run', 'build']
 
 - name: 'gcr.io/$PROJECT_ID/firebase'
